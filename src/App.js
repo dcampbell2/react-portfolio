@@ -7,15 +7,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Nav />
-      <Router >
+      <Router>
+        <Nav />
         <Switch>
-        <Route path="/Contact" component={Contact} />
-        <Route
-          path="/Portfolio"
-          render={(project) => <Portfolio {...project} image={projects[0].image} />}
-        />
-        <Route path="*" component={Home} />
+          <Route path="/Contact" component={Contact} />
+          <Route
+            path="/Portfolio"
+            render={(project) => (
+              <Portfolio {...project} image={projects[0].image} />
+            )}
+          />
+          <Route path="*" component={Home} />
         </Switch>
       </Router>
     </div>
