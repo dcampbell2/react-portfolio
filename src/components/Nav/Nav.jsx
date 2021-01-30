@@ -7,7 +7,7 @@ const Nav = () => {
         <a
           className="navbar-brand"
           className="nav justify-content-end"
-          href="index.html"
+          href="Home"
         >
           Damian Campbell
         </a>
@@ -26,17 +26,17 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="index.html">
+              <a className="nav-link active" href="Home">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contact.html">
+              <a className="nav-link" href="Contact">
                 Contact
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="portfolio.html">
+              <a className="nav-link" href="Portfolio">
                 Portfolio
               </a>
             </li>
