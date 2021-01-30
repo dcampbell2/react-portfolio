@@ -4,16 +4,16 @@ import Contact from "./containers/Contact/Contact";
 import Portfolio from "./containers/Portfolio/Portfolio";
 import projects from "./projects.json";
 import {
+  BrowserRouter,
   BrowserRouter as Router,
-  HashRouter,
   Route,
   Switch,
 } from "react-router-dom";
 function App() {
   return (
-    <HashRouter basename="https://dcampbell2.github.io/react-portfolio">
+    <BrowserRouter>
       <div>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Nav />
           <Switch>
             <Route path="/Contact" component={Contact} />
@@ -27,7 +27,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
