@@ -6,12 +6,13 @@ import projects from "./projects.json";
 import {
   BrowserRouter,
   BrowserRouter as Router,
+  HashRouter,
   Route,
   Switch,
 } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Router basename={process.env.PUBLIC_URL}>
           <Nav />
@@ -27,7 +28,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
