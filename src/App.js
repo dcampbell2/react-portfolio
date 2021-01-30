@@ -16,7 +16,7 @@ function App() {
         <Router>
           <Nav />
           <Switch>
-            <Route path="/Contact" component={Contact} />
+            <Route path="/Contact/" component={Contact} />
             <Route
               path="/Portfolio"
               render={(project) => (
