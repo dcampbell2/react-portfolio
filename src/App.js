@@ -4,17 +4,15 @@ import Contact from "./containers/Contact/Contact";
 import Portfolio from "./containers/Portfolio/Portfolio";
 import projects from "./projects.json";
 import {
-  BrowserRouter,
-  BrowserRouter as Router,
-  HashRouter,
+  HashRouter as Router,
   Route,
-  Switch,
+  Switch
 } from "react-router-dom";
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Nav />
           <Switch>
             <Route path="/Contact" component={Contact} />
