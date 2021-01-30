@@ -4,14 +4,14 @@ import Contact from "./containers/Contact/Contact";
 import Portfolio from "./containers/Portfolio/Portfolio";
 import projects from "./projects.json";
 import {
-  BrowserRouter,
   BrowserRouter as Router,
+  HashRouter,
   Route,
   Switch,
 } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Router>
           <Nav />
@@ -27,7 +27,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
