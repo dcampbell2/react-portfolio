@@ -15,7 +15,7 @@ function App() {
           path="/Portfolio"
           render={(project) => <Portfolio {...project} image={projects[0].image} />}
         />
-        <Route exact path="/" component={Home} />
+        <Route path="/Home" component={Home} />
         </Switch>
       </Router>
     </div>

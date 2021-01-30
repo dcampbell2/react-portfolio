@@ -7,7 +7,7 @@ const Nav = () => {
         <a
           className="navbar-brand"
           className="nav justify-content-end"
-          href="/"
+          href="Home"
         >
           Damian Campbell
         </a>
@@ -26,7 +26,7 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="Home">
                 About
               </a>
             </li>
