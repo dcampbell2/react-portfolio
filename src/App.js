@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="https://dcampbell2.github.io/react-portfolio">
       <div>
         <Router>
           <Nav />
