@@ -1,16 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
-    return (
-        <div>
-                  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a
-          className="navbar-brand"
-          className="nav justify-content-end"
-          href="Home"
-        >
+  return (
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link to="/" className="navbar-brand nav justify-content-end">
           Damian Campbell
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,25 +23,25 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="Home">
+              <NavLink to="/" className="nav-link active">
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Contact">
+              <NavLink to="/Contact" className="nav-link active">
                 Contact
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Portfolio">
+              <NavLink to="/Portfolio" className="nav-link active">
                 Portfolio
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
       </nav>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Nav;
