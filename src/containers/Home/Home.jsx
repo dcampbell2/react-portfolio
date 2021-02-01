@@ -50,9 +50,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <span>© Copyright 2020 Damian Campbell</span>
-      </footer>
     </div>
   );
 };
